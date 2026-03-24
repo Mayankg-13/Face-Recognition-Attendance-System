@@ -41,9 +41,9 @@ A modern Computer Vision–based attendance system that uses **OpenCV** and **fa
 
 ## ▶️ How to Run the Project
 
-Step 1: <img width="297" height="56" alt="image" src="https://github.com/user-attachments/assets/b132b362-9190-4f63-9c48-beb2886a0715" />
+Step 1: Clone the repository
 
-Step 2: <img width="328" height="59" alt="image" src="https://github.com/user-attachments/assets/150a5121-02ab-4249-a230-6840fe2ff949" />
+Step 2: Open the project folder
 
 Step 3: <img width="374" height="63" alt="image" src="https://github.com/user-attachments/assets/476f6332-e2d4-4ab6-96d2-d5f4ba346b59" />
 
