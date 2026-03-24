@@ -41,13 +41,18 @@ A modern Computer Vision–based attendance system that uses **OpenCV** and **fa
 
 ## ▶️ How to Run the Project
 
-Step 1: Clone the repository
-Step 2: Open the project folder
-Step 3: Create virtual environment
-Step 4: Activate virtual environment
-        **Windows (PowerShell)**
-Step 5: Install required libraries
-Step 6: Run the project
+Step 1: <img width="297" height="56" alt="image" src="https://github.com/user-attachments/assets/b132b362-9190-4f63-9c48-beb2886a0715" />
+
+Step 2: <img width="328" height="59" alt="image" src="https://github.com/user-attachments/assets/150a5121-02ab-4249-a230-6840fe2ff949" />
+
+Step 3: <img width="374" height="63" alt="image" src="https://github.com/user-attachments/assets/476f6332-e2d4-4ab6-96d2-d5f4ba346b59" />
+
+Step 4: <img width="385" height="46" alt="image" src="https://github.com/user-attachments/assets/21a2f4d5-4e20-49b5-bc99-5dc1c6ae63f6" />
+
+Step 5: <img width="364" height="63" alt="image" src="https://github.com/user-attachments/assets/044dbd9e-cabd-4198-8071-d7621309992b" />
+
+Step 6: <img width="227" height="45" alt="image" src="https://github.com/user-attachments/assets/af805857-5414-4700-a8dc-d79b02df0e7a" />
+
 The webcam will open and attendance will start automatically.
 
 ## 📚 Applications
