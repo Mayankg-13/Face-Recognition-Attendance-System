@@ -62,7 +62,9 @@ Step 6: Run the project
 The webcam will open and attendance will start automatically.
 
 ## 🧾 Output Example
-
+Name,Time
+MAYANK,18:19:08
+ADITYA,20:41:40
 
 ## 📚 Applications
 
