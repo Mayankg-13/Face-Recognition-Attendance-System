@@ -10,7 +10,7 @@ path = "dataset"
 images = []
 classNames = []
 
-for file in os.listdir(path):
+for file in sorted(os.listdir(path)):
     img = cv2.imread(f"{path}/{file}")
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
