@@ -42,18 +42,27 @@ A modern Computer Vision–based attendance system that uses **OpenCV** and **fa
 ## ▶️ How to Run the Project
 
 Step 1: Clone the repository
+(git clone https://github.com/your-username/Face-Recognition-Attendance-System.git)
 
 Step 2: Open the project folder
+(cd Face-Recognition-Attendance-System)
 
-Step 3: <img width="374" height="63" alt="image" src="https://github.com/user-attachments/assets/476f6332-e2d4-4ab6-96d2-d5f4ba346b59" />
+Step 3: Create virtual environment
+(python -m venv venv)
 
-Step 4: <img width="385" height="46" alt="image" src="https://github.com/user-attachments/assets/21a2f4d5-4e20-49b5-bc99-5dc1c6ae63f6" />
+Step 4: Activate virtual environment
+(venv\Scripts\activate)
 
-Step 5: <img width="364" height="63" alt="image" src="https://github.com/user-attachments/assets/044dbd9e-cabd-4198-8071-d7621309992b" />
+Step 5: Install required libraries
+(pip install -r requirements.txt)
 
-Step 6: <img width="227" height="45" alt="image" src="https://github.com/user-attachments/assets/af805857-5414-4700-a8dc-d79b02df0e7a" />
+Step 6: Run the project
+(python src/attendance.py)
 
 The webcam will open and attendance will start automatically.
+
+## 🧾 Output Example
+
 
 ## 📚 Applications
 
