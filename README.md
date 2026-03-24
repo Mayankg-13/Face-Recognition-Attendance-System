@@ -22,19 +22,8 @@ A modern Computer Vision–based attendance system that uses **OpenCV** and **fa
 - LBPH Face Recognizer
 
 ## 📂 Project Structure
-Face-Recognition-Attendance-System
-│
-├── dataset
-│ ├── mayank.jpg
-│ ├── aditya.jpg
-│ ├── rahul.jpg
-│
-├── src
-│ └── attendance.py
-│
-├── attendance.csv
-├── requirements.txt
-└── README.md
+<img width="602" height="565" alt="image" src="https://github.com/user-attachments/assets/71d94ee3-8b3b-4d27-96e6-093294c9fe0b" />
+
 
 ## 🔗 Live Demo
 
