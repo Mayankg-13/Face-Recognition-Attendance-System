@@ -73,5 +73,7 @@ The webcam will open and attendance will start automatically.
 
 ## 👨‍💻 Author
 Mayank Gomase
+
+
 Computer Vision Mini Project  
 
