@@ -1,21 +1,20 @@
 # 🎓 Face Recognition Attendance System
-A modern Computer Vision–based attendance system that uses **OpenCV** and **face recognition techniques** to automatically detect faces using a webcam and mark attendance in real time.
+A modern Computer Vision–based attendance system that uses **OpenCV** and **face recognition techniques** to automatically detect faces using a webcam and securely log attendance records in real time.
 
-## 🚀 Features
+## 🚀 Features & Recent Upgrades
 
-- 📷 Real-time face detection using webcam
-- 🧠 Face recognition using LBPH algorithm
-- 📝 Automatic attendance marking in CSV file
-- ⏱️ Attendance stored with time
-- 👤 Multiple face recognition support
-- ⚡ Fast and lightweight system
-- 💻 Fully executable from command line
-- 📂 Easy dataset-based face training
+- 📷 **Real-time Face Detection:** Utilizes tuned Haar cascades from a live webcam feed.
+- 🧠 **High-Accuracy LBPH Recognition:** Advanced OpenCV LBPH algorithm with lowered distance thresholds to prevent false positives and "Unknown" mismatches.
+- 🎯 **Automated Registration Script (`register_face.py`):** A custom tool that rapidly extracts optimal face crops directly from your webcam to massively improve training robustness.
+- 📅 **Date & Day Tracking:** CSV logs are now meticulously tracked by `Name, Time, Date, Day`.
+- 🛡️ **Smart Anti-Spam Logging:** Intelligently logs a person only *once per day* to prevent thousands of identical webcam frames from spamming the CSV log. 
+- 🪟 **Real-time Confidence Metrics:** The live video feed dynamically displays name labels alongside the exact mathematical "Distance Score" and clearly highlights `UNKNOWN` entities in red.
+- 💻 **Cross-Platform File Safety:** Bulletproof CSV read/write mechanisms securely evade common Windows Python file-pointer bugs.
 
 ## 🛠️ Technologies Used
 
 - Python 3.10
-- OpenCV (opencv-contrib-python)
+- OpenCV (`opencv-contrib-python`)
 - NumPy
 - Computer Vision (Face Detection + Face Recognition)
 - Haar Cascade Classifier
@@ -24,69 +23,78 @@ A modern Computer Vision–based attendance system that uses **OpenCV** and **fa
 ## 📂 Project Structure
 <img width="602" height="565" alt="image" src="https://github.com/user-attachments/assets/71d94ee3-8b3b-4d27-96e6-093294c9fe0b" />
 
-
 ## 🔗 Live Demo
-
 👉 Run the project locally using the steps below.
 
 ## 🧠 How It Works
-1. Add face images inside the **dataset** folder  
-2. Run the Python file  
-3. The webcam opens automatically  
-4. The system detects faces in real time  
-5. If a face matches:
-   - Name is displayed on screen
-   - Attendance is marked automatically
-6. Attendance is saved in **attendance.csv**
+1. **Register Faces:** Run `python register_face.py`, punch in a name, and look at the camera. The script effortlessly pulls 5 perfectly-cropped facial snapshots directly into the `dataset` folder.
+2. **Start Recognition:** Run `python src/attendance.py`.
+3. The AI scans the dataset, standardizes filenames, trains the LBPH model, and launches the webcam automatically.
+4. The system locates faces in real time and calculates their metric similarity.
+5. If the model distance score passes the strict authenticity threshold:
+   - Green bounding box with Name and Confidence Score appears.
+   - Attendance is seamlessly appended to the `attendance.csv` file (only once per day).
+6. If the face fails the threshold requirement:
+   - A red bounding box alerts you of an `UNKNOWN` entity and displays their poor score for calibration debugging.
 
 ## ▶️ How to Run the Project
 
-Step 1: Clone the repository
-(git clone https://github.com/your-username/Face-Recognition-Attendance-System.git)
+**Step 1:** Clone the repository
+```bash
+git clone https://github.com/your-username/Face-Recognition-Attendance-System.git
+```
 
-Step 2: Open the project folder
-(cd Face-Recognition-Attendance-System)
+**Step 2:** Open the project folder
+```bash
+cd Face-Recognition-Attendance-System
+```
 
-Step 3: Create virtual environment
-(python -m venv venv)
+**Step 3:** Create and activate a Virtual Environment
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
-Step 4: Activate virtual environment
-(venv\Scripts\activate)
+# Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Step 5: Install required libraries
-(pip install -r requirements.txt)
+**Step 4:** Install required libraries
+```bash
+pip install -r requirements.txt
+```
 
-Step 6: Run the project
-(python src/attendance.py)
+**Step 5:** Register a New Face
+```bash
+python register_face.py
+```
 
-The webcam will open and attendance will start automatically.
+**Step 6:** Start the Attendance System
+```bash
+python src/attendance.py
+```
 
-## 🧾 Output Example
-Name,Time
-
-MAYANK,18:19:08
-
-ADITYA,20:41:40
+## 🧾 Output Example (attendance.csv)
+```csv
+Name,Time,Date,Day
+MAYANK,14:58:21,2026-03-27,Friday
+SHIVAM,15:03:40,2026-03-27,Friday
+```
 
 ## 📚 Applications
-
-- College attendance system
-- School attendance system
-- Office employee attendance
+- College & School attendance systems
+- Office employee authentication
 - Smart classroom systems
 - Identity verification projects
 
 ## 🚀 Future Improvements
-
 - Add GUI using Tkinter
-- Store attendance in database
-- Improve accuracy using deep learning
+- Store attendance in a Database
+- Improve accuracy using Deep Learning
 - Add student ID system
 - Deploy as a web-based application
 
 ## 👨‍💻 Author
-Mayank Gomase
-
-
-Computer Vision Mini Project  
-
+**Mayank Gomase**  
+*Computer Vision Mini Project*
